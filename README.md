@@ -2,7 +2,9 @@
 <hline>
 <div align="center"><img src="https://github.com/milestag/devops157-Demo2/blob/master/title.jpg?raw=true"></div>
 <h2>Project description</h2>
-This project is a DevOps-157 presentation page, developed with Microsoft ASP.NET application for Demo1 DevOps Windows study programm by SoftServe company. Page represents information about course, technoligies, students and company. Page use MSSQL database engine to store and render "Students list".
+This application is intended to demonstrate the capabilities of the docker engine and its advantages over classic virtual machines.
+The environment consists of a load balancer, database, and some web servers. The whole environment is described in the docker compose file and started with one command.
+By default starts Haproxy load-balancer, 2 web servers with a pre-build ASP.NET Core application and a MSSQL database server.
 <hline>
 <h2>Goals</h2>
 The project goal is to get acquainted with the technologies of development of Web applications on the Windows platform. Automate the creation of environments to run applications based on Windows 2018-2018 Server. Setting up the environments for application deployment, including IIS Web Server configuration, MSSQL Server and others.
