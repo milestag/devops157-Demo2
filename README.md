@@ -29,14 +29,14 @@ The goal of the project is to demonstrate the using of Docker microservices for 
 <h2>Usage:</h2>
 <ul>
   
-  <li>1. Install Vagrant engine from "https://www.vagrantup.com/";</li>
+  <li>1. Install Docker engine from "https://www.docker.com/";</li>
   <li>1.1 Install Virtualbox software from "https://www.virtualbox.org/wiki/Downloads";
-  <li>2. Copy file "Vagrantfile" to you future virtual environement project directory. For example "D:\VM01";</li>
-  <li>3. Copy files: "cope.ps1", "dbattach.sql"	to you Vagrant project directory;</li>
-  <li>4. Download Project file "Publish.zip" From Github repo url "https://github.com/milestag/devops157/blob/master/Publish/Publish.zip" to Vagrant project directory;</li>
-  <li>5. Execute PowerShell command "Vagrant up" from target directory. Example "D:\VM01\Vagrant up";</li>
-  <li>6. Wait for Vagrant engine downlad virtualbox instances, install, run end provision them with provisioning script. Make some  coffe, you have at least 30-40 min.</li>
-  <li>7. Wait for end of deployment process and check the result using yur favorite web browser at ip adress: 192.168.56.10;</li>
+  <li>2. Copy file "docker-compose.yml" to you future virtual environement project directory. For example "D:\Demo2";</li>
+  <li>3. Copy file: "dbo.Student.sql"	to you project directory;</li>
+  <li>4. Download Project file "Publish.zip" From Github repo url "https://github.com/milestag/devops157/blob/master/Publish/Publish.zip" to project directory;</li>
+  <li>5. Execute PowerShell command "docker-compose up --scale webasp=2" from target directory. Example "D:\Demo2\";</li>
+  <li>6. Wait for Docker engine run all microservices.</li>
+  <li>7. Wait for end of deployment process and check the result using yur favorite web browser at ip adress: 192.168.99.100;</li>
   </ul>
 <hline>
 <h2>Deployment diagram</h2>
