@@ -7,7 +7,7 @@ The environment consists of a load balancer, database, and some web servers. The
 By default starts Haproxy load-balancer, 2 web servers with a pre-build ASP.NET Core application and a MSSQL database server.
 <hline>
 <h2>Goals</h2>
-The project goal is to get acquainted with the technologies of development of Web applications on the Windows platform. Automate the creation of environments to run applications based on Windows 2018-2018 Server. Setting up the environments for application deployment, including IIS Web Server configuration, MSSQL Server and others.
+The goal of the project is to demonstrate the using of Docker microservices for deploying Microsoft ASP.NET Core applications using load balancing and MSSQL Database server.
   <hline>
 <h2>Tools</h2>
     <ul>
