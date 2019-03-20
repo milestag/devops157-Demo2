@@ -39,9 +39,6 @@ The goal of the project is to demonstrate the using of Docker microservices for 
   <li>7. Wait for end of deployment process and check the result using yur favorite web browser at ip adress: 192.168.99.100;</li>
   </ul>
 <hline>
-<h2>Deployment diagram</h2>
-<div align="center"><img src="https://github.com/milestag/devops157/blob/master/Preview/Diagram.jpg?raw=true"></div>
-<hline>
 <h2>Summary</h2>
-Globally we have started environment based on Windows 2016 Server, with installed MSSQL Database Server 2014, Internet Information Services Web Server, Chocolate packet manager. Provision script create and config new web site bind to ip adress 192.168.56.10. Windows user credentials: Vagrant@vagrant.
+Globally we have started environment based Docker Engine, with MSSQL Database, ASP.NET Core Runtime Web Server and load Balancer with Sticky Sessions  and automatic scale of Web containers. Docker-Compose script create and config new web site bind to ip adress 192.168.99.100.
   
