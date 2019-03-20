@@ -11,11 +11,11 @@ services:
     image: microsoft/mssql-server-linux:latest
     environment:
       - 'ACCEPT_EULA=Y'
-      - 'SA_PASSWORD=Asdfzxcv10!'
+      - 'SA_PASSWORD=MyPass'
     volumes:
      - //d/Demo2:/Demo2
   
-    command: bin/bash -c "/opt/mssql/bin/sqlservr && sleep 30s && /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Asdfzxcv10! -i /Demo2/dbo.Student.sql"
+    command: bin/bash -c "/opt/mssql/bin/sqlservr && sleep 30s && /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P MyPass -i /Demo2/dbo.Student.sql"
     
     ports:
       - 1433:1433
