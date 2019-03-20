@@ -1,6 +1,6 @@
 <h1>DevOps 157 Demo 2  - SoftServe study program</h1>
 <hline>
-<div align="center"><img src="https://github.com/milestag/devops157/blob/master/Preview/page_preview.jpg"></div>
+<div align="center"><img src="https://github.com/milestag/devops157-Demo2/blob/master/title.jpg?raw=true"></div>
 <h2>Project description</h2>
 This project is a DevOps-157 presentation page, developed with Microsoft ASP.NET application for Demo1 DevOps Windows study programm by SoftServe company. Page represents information about course, technoligies, students and company. Page use MSSQL database engine to store and render "Students list".
 <hline>
