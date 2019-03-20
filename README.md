@@ -11,8 +11,8 @@ The goal of the project is to demonstrate the using of Docker microservices for 
   <hline>
 <h2>Tools</h2>
     <ul>
-      <li>Microsoft Visual Studio Community 2017 ver.15.9.7</li>
-      <li>Vagrant 2.2.3 by HashiCorp</li>
+      <li>Docker-Toolbox version 18.03.0-ce, build 0520e24302</li>
+      <li>Microsoft Visual Studio 2017 Community Edition</li>
       <li>VirtualBox 5.2.26 r128414 (Qt5.6.2) by Oracle</li>
       </ul>
       <hline>
@@ -22,10 +22,9 @@ The goal of the project is to demonstrate the using of Docker microservices for 
  <li>Preview - folder contains images used by repository</li>
  </ul> 
 <h2>Files</h2>
-<p><strong>Vagrantfile</strong> - configuration file for Vagrant orcestration engine for automatic deploy of different virtual environements.</p>
-<p><strong>dbattach.sql</strong> - External SQL script for attaching MSSQL Database at deployment environement.</p>
-<p><strong>cope.ps1</strong> - External PowerShell script for provision virtual environment, installing missing tools, software and configure them using indepotential principals.</p>
-<p><strong>deploy.bat</strong> - EXAMLE of External PowerShell script to run seamless deployment process of application recently build and published by Visua Studio.</p>
+<p><strong>Dockerfile</strong> - configuration file for Docker engine for build ASP.NET Core Application Container.</p>
+<p><strong>dbo.Student.sql</strong> - External SQL script for attaching MSSQL Database at MSSQL Docker Container.</p>
+<p><strong>docker-compose.yml</strong> - Docker-Compose script for running complete microservice environment and configure them using indepotential principals.</p>
 <hline>
 <h2>Usage:</h2>
 <ul>
