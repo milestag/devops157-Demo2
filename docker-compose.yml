@@ -1,0 +1,36 @@
+version: '2'
+services:
+  webasp:
+    image: aspdemo
+    environment:
+      - COOKIE=SRV insert indirect nocache
+    ports:
+     - 8080-8090:80
+              
+  mssql:
+    image: microsoft/mssql-server-linux:latest
+    environment:
+      - 'ACCEPT_EULA=Y'
+      - 'SA_PASSWORD=Asdfzxcv10!'
+    volumes:
+     - //d/Demo2:/Demo2
+  
+    command: bin/bash -c "/opt/mssql/bin/sqlservr && sleep 30s && /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Asdfzxcv10! -i /Demo2/dbo.Student.sql"
+    
+    ports:
+      - 1433:1433
+    
+    
+   
+  
+  lb:
+    image: dockercloud/haproxy
+    links:
+      - webasp
+     
+    environment:
+      - COOKIE=SRV insert indirect nocache
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 80:80
